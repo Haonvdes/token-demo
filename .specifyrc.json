@@ -1,0 +1,21 @@
+
+
+  {
+    "version": "2",
+    "repository": "@hao-test/figma",
+    "personalAccessToken": "6f4271c5728803e682da0a57d5bc3defbec2c2712a75f3a4f945f2c8c046238e",
+    "rules": [
+      {
+        "name": "CSS Styles",
+        "parsers": [
+          {
+            "name": "to-css-custom-properties",
+            "output": {
+              "type":"file",
+              "filePath": "./output/styles/styless.css"
+            }
+          }
+        ]
+      }
+    ]
+  }
