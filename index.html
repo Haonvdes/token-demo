@@ -6,6 +6,7 @@
     <title>Token-demo</title>
     <link rel="stylesheet" href="./css/bootstrap-grid.css">
     <link rel="stylesheet" href="./output/styles/styles.css">
+    <link rel="stylesheet" href="./output/styles/text-styles.css">
 </head>
 <body class="page">
     <header>
@@ -41,63 +42,110 @@
                     position: fixed;
                     width: 100%;
                     background-repeat: no-repeat;
-                    bottom: -60px;
-                    z-index: -10;
+                    bottom: 0;
+                    z-index: -100;
                 ">
-                        <img src="./public/images/tree.png" alt="" style="width: 100%;">
+                        <img src="./public/images/bottom-co.png" alt="" style="width: 100%;">
                     </div>
     <main>
-        <div class="container">
+        <div class="container content">
+            <p class="body-md-normal"> Test font</p>
                 <div class="chart">
-                    <div class="top">
-                        <button> 
-                            <img src="./public/images/aura.svg" alt="">
-                            Aura
-                        </button>
-                        <button> 
-                            <svg xmlns="http://www.w3.org/2000/svg" color="var(--text-neutral-icon)" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                            <mask id="path-1-inside-1_19_879" fill="white">
-                              <path d="M14.5 4.48666C14.5 4.35333 14.4467 4.22666 14.3533 4.13333L11.8733 1.65333C11.68 1.46 11.36 1.46 11.1667 1.65333C10.9733 1.84666 10.9733 2.16666 11.1667 2.36L12.8 3.99333H2C1.72667 3.99333 1.5 4.22 1.5 4.49333C1.5 4.76666 1.72667 4.98666 2 4.98666H12.7933L11.1667 6.61333C10.9733 6.80666 10.9733 7.12666 11.1667 7.32C11.2667 7.42 11.3933 7.46666 11.52 7.46666C11.6467 7.46666 11.7733 7.42 11.8733 7.32L14.3467 4.84666C14.3933 4.8 14.4333 4.74 14.46 4.67333C14.46 4.66667 14.46 4.66 14.4667 4.65333C14.4867 4.6 14.5 4.54666 14.5 4.48666Z"/>
-                            </mask>
-                            <path d="M14.5 4.48666C14.5 4.35333 14.4467 4.22666 14.3533 4.13333L11.8733 1.65333C11.68 1.46 11.36 1.46 11.1667 1.65333C10.9733 1.84666 10.9733 2.16666 11.1667 2.36L12.8 3.99333H2C1.72667 3.99333 1.5 4.22 1.5 4.49333C1.5 4.76666 1.72667 4.98666 2 4.98666H12.7933L11.1667 6.61333C10.9733 6.80666 10.9733 7.12666 11.1667 7.32C11.2667 7.42 11.3933 7.46666 11.52 7.46666C11.6467 7.46666 11.7733 7.42 11.8733 7.32L14.3467 4.84666C14.3933 4.8 14.4333 4.74 14.46 4.67333C14.46 4.66667 14.46 4.66 14.4667 4.65333C14.4867 4.6 14.5 4.54666 14.5 4.48666Z" fill="white"/>
-                            <path d="M14.3533 4.13333L15.0604 3.42622V3.42622L14.3533 4.13333ZM11.8733 1.65333L11.1662 2.36044V2.36044L11.8733 1.65333ZM11.1667 2.36L10.4596 3.0671V3.0671L11.1667 2.36ZM12.8 3.99333V4.99333H15.2142L13.5071 3.28622L12.8 3.99333ZM12.7933 4.98666L13.5004 5.69377L15.2075 3.98666H12.7933V4.98666ZM11.1667 6.61333L10.4596 5.90622L11.1667 6.61333ZM11.8733 7.32L11.1662 6.61289L11.8733 7.32ZM14.3467 4.84666L15.0538 5.55377V5.55377L14.3467 4.84666ZM14.46 4.67333L15.3885 5.04472L15.46 4.86591V4.67333H14.46ZM14.4667 4.65333L15.1738 5.36044L15.3269 5.20727L15.403 5.00446L14.4667 4.65333ZM15.5 4.48666C15.5 4.08511 15.3392 3.70496 15.0604 3.42622L13.6462 4.84044C13.5542 4.74837 13.5 4.62156 13.5 4.48666H15.5ZM15.0604 3.42622L12.5804 0.946224L11.1662 2.36044L13.6462 4.84044L15.0604 3.42622ZM12.5804 0.946225C11.9966 0.362367 11.0434 0.362367 10.4596 0.946225L11.8738 2.36044C11.6766 2.55763 11.3634 2.55763 11.1662 2.36044L12.5804 0.946225ZM10.4596 0.946225C9.8757 1.53008 9.8757 2.48325 10.4596 3.0671L11.8738 1.65289C12.071 1.85008 12.071 2.16325 11.8738 2.36044L10.4596 0.946225ZM10.4596 3.0671L12.0929 4.70044L13.5071 3.28622L11.8738 1.65289L10.4596 3.0671ZM12.8 2.99333H2V4.99333H12.8V2.99333ZM2 2.99333C1.17438 2.99333 0.5 3.66771 0.5 4.49333H2.5C2.5 4.77228 2.27895 4.99333 2 4.99333V2.99333ZM0.5 4.49333C0.5 5.33633 1.19192 5.98666 2 5.98666V3.98666C2.26141 3.98666 2.5 4.197 2.5 4.49333H0.5ZM2 5.98666H12.7933V3.98666H2V5.98666ZM12.0862 4.27956L10.4596 5.90622L11.8738 7.32044L13.5004 5.69377L12.0862 4.27956ZM10.4596 5.90622C9.8757 6.49008 9.8757 7.44325 10.4596 8.0271L11.8738 6.61289C12.071 6.81008 12.071 7.12325 11.8738 7.32044L10.4596 5.90622ZM10.4596 8.0271C10.757 8.32452 11.1424 8.46666 11.52 8.46666V6.46666C11.6442 6.46666 11.7764 6.51547 11.8738 6.61289L10.4596 8.0271ZM11.52 8.46666C11.8976 8.46666 12.283 8.32452 12.5804 8.0271L11.1662 6.61289C11.2636 6.51547 11.3958 6.46666 11.52 6.46666V8.46666ZM12.5804 8.0271L15.0538 5.55377L13.6396 4.13956L11.1662 6.61289L12.5804 8.0271ZM15.0538 5.55377C15.1977 5.40984 15.3123 5.23514 15.3885 5.04472L13.5315 4.30194C13.5544 4.24486 13.589 4.19016 13.6396 4.13956L15.0538 5.55377ZM15.46 4.67333C15.46 4.65144 15.4648 4.77074 15.431 4.90588C15.3888 5.07459 15.3013 5.23289 15.1738 5.36044L13.7596 3.94622C13.442 4.26379 13.46 4.65179 13.46 4.67333H15.46ZM15.403 5.00446C15.4499 4.87951 15.5 4.70345 15.5 4.48666H13.5C13.5 4.38988 13.5235 4.32049 13.5303 4.30221L15.403 5.00446Z" fill="white" mask="url(#path-1-inside-1_19_879)"/>
-                            <path d="M14 11.0133H3.20667L4.83333 9.38667C5.02667 9.19334 5.02667 8.87334 4.83333 8.68C4.64 8.48667 4.32 8.48667 4.12667 8.68L1.65333 11.1533C1.60667 11.2 1.56667 11.26 1.54 11.3267C1.54 11.3333 1.54 11.34 1.53333 11.3467C1.51333 11.4 1.5 11.46 1.5 11.52C1.5 11.6533 1.55333 11.78 1.64667 11.8733L4.12667 14.3533C4.22667 14.4533 4.35333 14.5 4.48 14.5C4.60667 14.5 4.73333 14.4533 4.83333 14.3533C5.02667 14.16 5.02667 13.84 4.83333 13.6467L3.2 12.0133H14C14.2733 12.0133 14.5 11.7867 14.5 11.5133C14.5 11.24 14.2733 11.0133 14 11.0133Z" fill="white"/>
-                          </svg>
-                          <button> 
-                            <img src="./public/images/busd.svg" alt="">
-                            BUSD
-                        </button>
-                    </div>
-                    <div class="token-data">
-                        <div class="price">
-                            <p>0.0768BUSD</p>
-                        <p>++0.095 (+0.75%)</p>
-                        <p>Past 24 hours</p>
-                        </div>
-                        <div class="tab">
-                            <button class="tab" style="
-                            background-color: var(--tab-bg-active);
-                            color: var(--tab-text-active);
-                        ">24h</button>
-                            <button class="tab">1W</button>
-                            <button class="tab">1M</button>
-                            <button class="tab">1Y</button>
-                        </div>
-                    </div>
-                    <div class="time">
-                        <img src="" alt="">
-                        <div class="timeline">
-                            <p>11:00AM</p>
-                            <p>11:00AM</p>
-                            <p>11:00AM</p>
-                            <p>11:00AM</p>
-                            <p>11:00AM</p>
-                        </div>
-                    </div>
-
-
+                    <!-- TradingView Widget BEGIN -->
+                <div class="tradingview-widget-container">
+                    <div class="tradingview-widget-container__widget"></div>
+                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js" async>
+                    {
+                    "symbols": [
+                    [
+                        "MEXC:AURAUSDT|1M"
+                    ]
+                    ],
+                    "chartOnly": false,
+                    "width": "100%",
+                    "height": "100%",
+                    "locale": "en",
+                    "colorTheme": "dark",
+                    "autosize": true,
+                    "showVolume": false,
+                    "showMA": false,
+                    "hideDateRanges": false,
+                    "hideMarketStatus": true,
+                    "hideSymbolLogo": false,
+                    "scalePosition": "no",
+                    "scaleMode": "Normal",
+                    "fontFamily": "-apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif",
+                    "fontSize": "12",
+                    "noTimeScale": false,
+                    "valuesTracking": "1",
+                    "changeMode": "price-and-percent",
+                    "chartType": "area",
+                    "maLineColor": "#2962FF",
+                    "maLineWidth": 1,
+                    "maLength": 9,
+                    "fontColor": "rgba(255, 255, 255, 1)",
+                    "backgroundColor": "rgba(19, 23, 34, 0)",
+                    "lineWidth": 2,
+                    "lineType": 0,
+                    "dateRanges": [
+                    "1w|15",
+                    "1m|30",
+                    "3m|60",
+                    "6m|120"
+                    ]
+                }
+                    </script>
                 </div>
+                 <!-- TradingView Widget END -->
             </div>
+            <div class="swap">
+                <!-- TradingView Widget BEGIN -->
+            <div class="tradingview-widget-container">
+                <div class="tradingview-widget-container__widget"></div>
+                <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js" async>
+                {
+                "symbols": [
+                [
+                    "MEXC:AURAUSDT|1M"
+                ]
+                ],
+                "chartOnly": false,
+                "width": "100%",
+                "height": "100%",
+                "locale": "en",
+                "colorTheme": "dark",
+                "autosize": true,
+                "showVolume": false,
+                "showMA": false,
+                "hideDateRanges": false,
+                "hideMarketStatus": true,
+                "hideSymbolLogo": false,
+                "scalePosition": "no",
+                "scaleMode": "Normal",
+                "fontFamily": "-apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif",
+                "fontSize": "12",
+                "noTimeScale": false,
+                "valuesTracking": "1",
+                "changeMode": "price-and-percent",
+                "chartType": "area",
+                "maLineColor": "#2962FF",
+                "maLineWidth": 1,
+                "maLength": 9,
+                "fontColor": "rgba(255, 255, 255, 1)",
+                "backgroundColor": "rgba(19, 23, 34, 0)",
+                "lineWidth": 2,
+                "lineType": 0,
+                "dateRanges": [
+                "1w|15",
+                "1m|30",
+                "3m|60",
+                "6m|120"
+                ]
+            }
+                </script>
+            </div>
+             <!-- TradingView Widget END -->
+        </div>
         </div>
 
     </main>
@@ -150,12 +198,3 @@
     </footer>
 </body>
 </html>
-
-
-
-
-    <!-- <div class="btn-group" role="group" aria-label="Basic example">
-  <button type="button" class="btn btn-primary">Left</button>
-  <button type="button" class="btn btn-primary">Middle</button>
-  <button type="button" class="btn btn-primary">Right</button>
-</div> -->

@@ -1,21 +1,71 @@
-
-
-  {
-    "version": "2",
-    "repository": "@hao-test/figma",
-    "personalAccessToken": "6f4271c5728803e682da0a57d5bc3defbec2c2712a75f3a4f945f2c8c046238e",
-    "rules": [
-      {
-        "name": "CSS Styles",
-        "parsers": [
-          {
-            "name": "to-css-custom-properties",
-            "output": {
-              "type":"file",
-              "filePath": "./output/styles/styless.css"
-            }
-          }
+{
+  "repository": "@hao-test/sharing",
+  "personalAccessToken": "3aa7e0aedbc6506ceff898d6786d3fabc7c96a3bcfdb1c32c6b737b6cc45e614",
+  "rules": [
+    {
+      "name": "Design Tokens / Text Styles",
+      "path": "./output/styles/text-styles.css",
+      "filter": {
+        "types": [
+          "textStyle"
         ]
-      }
-    ]
-  }
+      },
+      "parsers": [
+        {
+          "name": "to-css-text-style",
+          "options": {
+            "exclude": [
+              "color",
+              "text-indent",
+              "vertical-align",
+              "text-align"
+            ],
+            "relativeLineHeight": true,
+            "genericFamily": "serif"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Design Tokens / Import font files in CSS",
+      "path": "./output/styles/fonts.css",
+      "filter": {
+        "types": [
+          "font"
+        ]
+      },
+      "parsers": [
+        {
+          "name": "to-css-font-import",
+          "options": {
+            "formats": [
+              "woff",
+              "woff2"
+            ],
+            "fontsPath": "../fonts"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Design Tokens / Import font files",
+      "path": "./output/fonts",
+      "filter": {
+        "types": [
+          "font"
+        ]
+      },
+      "parsers": [
+        {
+          "name": "convert-font",
+          "options": {
+            "formats": [
+              "woff",
+              "woff2"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

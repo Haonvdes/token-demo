@@ -162,6 +162,10 @@ html{
   padding: 0px;
   overflow: hidden;
 }
+
+@import url(./text-styles.css);
+@import url(./fonts.css);
+
 p{
   color: var(--text-neutral-body);
 }
@@ -236,23 +240,34 @@ a:hover{
     color: var(--tab-text-default);
     border: none;
 }
-.chart{
+.content{
   display: flex;
+  gap: 32px;
+  height: 60vh;
+}
+.chart{
+  z-index: 100;
   width: 674px;
-  padding: var(--py-4, 24px) var(--px-4, 24px);
+  padding: var(--py-4) var(--px-4);
   flex-direction: column;
   align-items: flex-start;
   gap: 16px;
   flex: 1 0 0;
-  border-radius: var(--radius-3, 16px);
-  border: 1px solid var(--border-neutral-container, #414D4F);
-  background: var(--bg-surface-container, #1A282B); 
+  border-radius: var(--radius-3);
+  border: 1px solid var(--border-neutral-container);
+  background: var(--bg-surface-container); 
 } 
-.top{
-    display: flex;
-    align-items: flex-start;
-    height: 24px;
-    
+
+.swap{
+  z-index: 100;
+  width: 400px;
+  min-width: 320px;
+  max-width: 500px;
+  padding: var(--py-4) var(--px-4);
+  border-radius: var(--radius-3);
+  border: 1px solid var(--border-neutral-container);
+  background: var(--bg-surface-container); 
+
 }
 .decorate-footer{
   display: flex;
@@ -272,11 +287,8 @@ a:hover{
     align-items: center;
     position: absolute;
     bottom: 0;
-    z-index: 09000;
+    z-index: 1;
     display: flex;
     justify-content: space-between;
 }
 
-.img-decorate{
-  z-index: -10;
-}
