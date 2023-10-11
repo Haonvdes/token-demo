@@ -1,22 +1,8 @@
-.body-lg-normal {
-  font-family: Lato-SemiBold, serif;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 1.22;
-}
-
 .body-md-normal {
   font-family: Lato-SemiBold, serif;
   font-weight: 600;
   font-size: 16px;
   line-height: 1.25;
-}
-
-.body-sm-normal {
-  font-family: Lato-SemiBold, serif;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 1.29;
 }
 
 .body-xl-normal {
@@ -33,9 +19,23 @@
   line-height: 1.33;
 }
 
+.body-sm-normal {
+  font-family: Lato-SemiBold, serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.29;
+}
+
 .heading-h-1-normal {
   font-family: Lato-Bold, serif;
   font-weight: 700;
   font-size: 22px;
   line-height: 1.09;
+}
+
+.body-lg-normal {
+  font-family: Lato-SemiBold, serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.22;
 }
