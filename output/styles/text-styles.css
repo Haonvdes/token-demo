@@ -1,41 +1,41 @@
+.body-lg-normal {
+  font-family: Inter-SemiBold, serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.22;
+}
+
 .body-md-normal {
-  font-family: Lato-SemiBold, serif;
+  font-family: Inter-SemiBold, serif;
   font-weight: 600;
   font-size: 16px;
   line-height: 1.25;
 }
 
+.body-sm-regular {
+  font-family: Inter-Medium, serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+}
+
 .body-xl-normal {
-  font-family: Lato-Medium, serif;
+  font-family: Inter-Medium, serif;
   font-weight: 500;
   font-size: 24px;
   line-height: 1.67;
 }
 
-.body-xs-normal {
-  font-family: Lato-SemiBold, serif;
-  font-weight: 600;
+.body-xs-regular {
+  font-family: Inter-Medium, serif;
+  font-weight: 500;
   font-size: 12px;
   line-height: 1.33;
 }
 
-.body-sm-normal {
-  font-family: Lato-SemiBold, serif;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 1.29;
-}
-
 .heading-h-1-normal {
-  font-family: Lato-Bold, serif;
-  font-weight: 700;
+  font-family: Inter-SemiBold, serif;
+  font-weight: 600;
   font-size: 22px;
   line-height: 1.09;
-}
-
-.body-lg-normal {
-  font-family: Lato-SemiBold, serif;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 1.22;
 }
